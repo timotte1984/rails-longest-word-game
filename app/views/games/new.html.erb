@@ -1,0 +1,16 @@
+
+<div class="container ">
+  <h1>Longest word game</h1>
+  <ul class="list-inline">
+    <% @letters.each do |letter| %>
+      <div class="bg-success shadow list-inline-item box- class="mx-auto" style="padding: 5px 10px; text-align:center"><li><%= letter %></li></div>
+    <% end %>
+  </ul>
+
+  <form action="../score">
+    <input type="text" name="wordProprosition">
+    <input type="submit" name="Submit">
+    <!-- <input type="hidden" name="ltrs" value=<%= @letters.join() %> > -->
+  </form>
+</div>
+
